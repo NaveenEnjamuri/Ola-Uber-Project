@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lola Nowbook</title>
+  <link rel="stylesheet" href="Lola-nowbook.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="Lola-nowbook.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="logo">
+      <h1> <a href="./Lola.html" style="text-decoration: none; color:#fff">LOLA</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./Lola.html"> <i class="fa-solid fa-house"></i> Home </a></li>
+        <li><a href="./Lola-about.html"> <i class="fa-solid fa-bars"></i> About</a></li>
+        <li><a href="./Lola-service.html"> <i class="fa-solid fa-taxi"></i> Services</a> </li>
+        <li><a href="./Lola-contact.html"> <i class="fa-solid fa-address-card"></i> Contact Us</a></li>
+        <li><a href="./Lola-login.html"> <i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+        <li> <a href="./Lola-safety.html"> <i class="fa-solid fa-helmet-safety"></i> Safety</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div>
+    <h1 class="headingh1">Book a ride to enter PickUp & Destination</h1>
+
+    <!-- <div id="map"></div> -->
+
+    <form id="locationform">
+      <label for="pickup">Pickup Location:</label>
+      <input type="text" id="pickup" name="pickup" required><br>
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required><br><br>
+      <div class="submitclass"><input type="submit" id="submitbtn" value="Book Now" onclick="generateLink()"></div>
+    </form>
+  </div>
+    
+
+    <!-- Include the Google Maps API -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AlzaSyAQCTz6KNJjwncMAA9Jd773QJMW8Dbfl9A&callback=initMap" -->
+    <!-- async defer></script> -->
+
+    <!-- Include the Google Maps API -->
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUovWmcTACFQM6GOkn9LkuO9ju9cTfqyM&callback=initMap&libraries=places" async defer></script>
+
+
+  <!-- Include the Google Maps API -->
+  <!-- AlzaSyAQCTz6KNJjwncMAA9Jd773QJMW8Dbfl9A -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?region=IN&key=AIzaSyBUovWmcTACFQM6GOkn9LkuO9ju9cTfqyM&callback=initMap" async defer></script> -->
+
+</body>
+
+</html>
